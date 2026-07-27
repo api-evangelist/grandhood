@@ -1,7 +1,20 @@
 aid: grandhood
 name: Grandhood
-description: Grandhood is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Grandhood is a Danish digital pension provider that lets companies set up and
+  run a modern workplace (company) pension scheme entirely online, without the
+  traditional adviser meetings and paperwork. Employers register with MitID,
+  invite employees, and activate a plan; employees enroll, get built-in digital
+  pension counselling, choose an investment profile, consolidate scattered
+  pension savings, and see real-time savings, returns, and insurance coverage in
+  the Grandhood mobile app. Pensions bundle both long-term savings and present-day
+  insurance protection. Pricing is a simple fixed monthly amount per employee
+  (65-95 DKK/month) plus investment costs, with no deposit-percentage fees and
+  free pension advice. The underlying pension administration is backed by Velliv,
+  Denmark's third-largest pension company. Grandhood is based in Copenhagen
+  (Esplanaden 14B, 1263 København K; CVR 44147750) and is a portfolio company of
+  Speedinvest. Grandhood publishes consumer web and mobile-app products; it does
+  not currently expose a public developer API, SDKs, or developer documentation.
 url: https://raw.githubusercontent.com/api-evangelist/grandhood/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +22,57 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://firma.grandhood.dk/resources/themes/grandhood/integration/apple/icon.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pension
+- Retirement
+- FinTech
+- Insurance
+- Savings
+- Denmark
+- Workplace Benefits
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/grandhood-domain-security.yml
+- type: Website
+  url: https://www.grandhood.dk/en/home
+- type: Pricing
+  url: https://www.grandhood.dk/en/pricing
+- type: SignUp
+  url: https://firma.grandhood.dk/tilmeld/tilmeld-firma
+- type: Login
+  url: https://firma.grandhood.dk/log-ind
+- type: Support
+  url: https://www.grandhood.dk/en/home
+- type: PrivacyPolicy
+  url: https://www.grandhood.dk/gdpr/vilkar-og-dokumenter
+- type: TermsOfService
+  url: https://www.grandhood.dk/gdpr/vilkar-og-dokumenter
+- type: About
+  url: https://www.grandhood.dk/en/our-vision
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
